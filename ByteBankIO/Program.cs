@@ -7,7 +7,11 @@ partial class Program
     {
         //CriarArquivo(); 
         //CriarArquivoComWriter();
-        TestaEscrita();
+        //TestaEscrita();
+
+        EscritaBinaria();
+        //LeituraBinaria();
+
         Console.ReadLine();
     }
 }
