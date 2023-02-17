@@ -5,7 +5,7 @@ partial class Program
 {
     static void LidandoComFileStreamDiretamente()
     {
-        var enderecoDoArquivo = "D:\\Projetos\\ByteBankIO\\contas.txt";
+        var enderecoDoArquivo = "C:\\Projetos\\ByteBankIO\\contas.txt";
 
         using (var fluxoDoArquivo = new FileStream(enderecoDoArquivo, FileMode.Open))
         {
