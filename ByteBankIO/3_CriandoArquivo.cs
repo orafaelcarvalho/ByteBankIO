@@ -20,4 +20,15 @@ partial class Program
 
         Console.ReadLine();
     }
+
+    static void CriarArquivoComWriter()
+    {
+        var caminhoNovoArquivo = "C:\\Projetos\\ByteBankIO\\contasExportadas.csv";
+
+        using(var fluxoDeArquivo = new FileStream(caminhoNovoArquivo, FileMode.Create))
+        using(var escritor = new StreamWriter(fluxoDeArquivo))
+        {
+            escritor.Write("456,7895,4785.40,Rafael Carvalho");
+        }
+    }
 }
