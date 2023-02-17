@@ -7,6 +7,7 @@ partial class Program
     {
         //CriarArquivo(); 
         //CriarArquivoComWriter();
+        TestaEscrita();
         Console.ReadLine();
     }
 }
