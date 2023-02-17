@@ -6,7 +6,7 @@ partial class Program
     static void Main(string[] args)
     {
         //CriarArquivo(); 
-        CriarArquivoComWriter();
+        //CriarArquivoComWriter();
         Console.ReadLine();
     }
 }
