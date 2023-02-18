@@ -5,7 +5,7 @@ partial class Program
 {
     static void EscritaBinaria()
     {
-        var caminhoNovoArquivo = "C:\\Projetos\\ByteBankIO\\contaCorrente.txt";
+        var caminhoNovoArquivo = "D:\\Projetos\\ByteBankIO\\contaCorrente.txt";
 
         using (var fs = new FileStream(caminhoNovoArquivo, FileMode.Create))
         using (var escritor = new BinaryWriter(fs))
@@ -19,12 +19,17 @@ partial class Program
 
     static void LeituraBinaria()
     {
-        var caminhoNovoArquivo = "C:\\Projetos\\ByteBankIO\\contaCorrente.txt";
+        var caminhoNovoArquivo = "D:\\Projetos\\ByteBankIO\\contaCorrente.txt";
 
         using (var fluxoDeArquivo = new FileStream(caminhoNovoArquivo, FileMode.Open))
         using (var leitor = new BinaryReader(fluxoDeArquivo))
         {
             var agencia = leitor.ReadInt32();
+            var numeroConta = leitor.ReadInt32();
+            var saldo = leitor.ReadDouble();
+            var titular = leitor.ReadString();
+
+            Console.WriteLine($"{agencia}/{numeroConta} {titular} {saldo}");
         }
     }
 }

@@ -1,5 +1,6 @@
 ﻿ using ByteBankIO;
 using System.Text;
+using System.Xml;
 
 partial class Program
 {
@@ -9,9 +10,10 @@ partial class Program
         //CriarArquivoComWriter();
         //TestaEscrita();
 
-        EscritaBinaria();
-        //LeituraBinaria();
+        //EscritaBinaria();
+        LeituraBinaria();
 
+        Console.WriteLine("Aplicação finalizada...");
         Console.ReadLine();
     }
 }
